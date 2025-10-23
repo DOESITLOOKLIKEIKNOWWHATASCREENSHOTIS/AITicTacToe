@@ -1,0 +1,1 @@
+AIS = {"Player1" : "AI", "Player2" : "AI2"}
