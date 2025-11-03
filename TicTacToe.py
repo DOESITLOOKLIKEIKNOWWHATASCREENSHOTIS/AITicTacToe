@@ -298,6 +298,9 @@ def main():
 
     elif gamemode == "2":
         #AI vs AI
+        player1Wins = 0
+        player2Wins = 0 
+        ties = 0
         while True:
             try: 
                 #Player 1 turn
@@ -310,11 +313,13 @@ def main():
                             #If player 1 wins, tell player 2 that they lost
                             Player1.TicTacToe_communation(result)
                             Player2.TicTacToe_communation("Loser")
+                            player1Wins = player1Wins + 1
 
                         else:
                             #It's a draw!
                             Player1.TicTacToe_communation(result)
                             Player2.TicTacToe_communation(result)
+                            ties = ties + 1
 
                     current_turn = current_turn % 2 + 1
                 
@@ -328,11 +333,13 @@ def main():
                             #If player 2 wins, tell player 1 that they lost
                             Player2.TicTacToe_communation(result)
                             Player1.TicTacToe_communation("Loser")
+                            player2Wins = player2Wins + 1
 
                         else:
                             #It's a draw!
                             Player2.TicTacToe_communation(result)
                             Player1.TicTacToe_communation(result)
+                            ties = ties + 1
 
                     current_turn = current_turn % 2 + 1
             
@@ -344,6 +351,9 @@ def main():
                 Player1.TicTacToe_communation("Quiting")
                 Player2.TicTacToe_communation("Quiting")
 
+                print("Player1 Won this many times:", player1Wins)
+                print("Player1 Won this many times:", player2Wins)
+                print("This is how many draws happened:", ties)
                 print("Done... (Press enter to go back to title screen)")
  
                 input()
