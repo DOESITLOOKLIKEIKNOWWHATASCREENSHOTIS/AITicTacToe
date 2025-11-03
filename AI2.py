@@ -354,7 +354,7 @@ def debug_menu():
             break 
         
         #Reset the AI's loaded postions
-        elif userinputfordebugmenu == "0":
+        elif userinputfordebugmenu == "3":
             print("\n\n\nARE YOU SURE WANT TO RESET loaded_postions")
             print("This will completely wipe the AI's mermory and force it to start fresh!")
             

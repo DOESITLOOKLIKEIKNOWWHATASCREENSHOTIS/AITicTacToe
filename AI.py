@@ -338,7 +338,7 @@ def debug_menu():
     print("DEBUG MENU")
     print("----------")
     while True:
-        print("\n[1] View AI's loaded postions. [2] Modify the postions. [3] Exit [0] Reset the AI's loaded postions. ")
+        print("\n[1] View AI's loaded postions. [2] Exit [3] Reset the AI's loaded postions. ")
         userinputfordebugmenu = input("Selection: ")
 
         #View AI's loaded postions
@@ -346,10 +346,6 @@ def debug_menu():
             print("Loading loaded_postions...")
             print(loaded_postions)
             print("Done.")
-
-        #Modify the postions.
-        elif userinputfordebugmenu == "2":
-            ''
 
         #Exit
         elif userinputfordebugmenu == "3":
