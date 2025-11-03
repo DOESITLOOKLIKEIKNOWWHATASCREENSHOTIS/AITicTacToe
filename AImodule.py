@@ -2,7 +2,7 @@ class classvalues:
     '''General varibles'''
 
     #Setting to false will prevent the AI from printing debug information.
-    debugInformation = False
+    debugInformation = True
 
     #Standard the value a chance is set at when first created.
     standard = 100
