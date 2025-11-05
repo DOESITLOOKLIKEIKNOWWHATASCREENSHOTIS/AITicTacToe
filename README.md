@@ -2,7 +2,7 @@
 A easily customizable program that allows you to play against an AI player that learns from their mistakes, or have 2 AIs fight against each other.
 
 # Set up
-At least Python 3.13 or onwards.
+At least Python 3.13 or onwards and install numby
 
 
 # Programs
